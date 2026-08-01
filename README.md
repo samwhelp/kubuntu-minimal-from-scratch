@@ -53,6 +53,12 @@
 | [Ubuntu Adjustment](https://samwhelp.github.io/ubuntu-adjustment/) | [GitHub](https://github.com/samwhelp/ubuntu-adjustment) |
 
 
+| Link | GitHub |
+| ---- | ------ |
+| [anduinos-iso-builder-remix-kde-plasma](https://samwhelp.github.io/anduinos-iso-builder-remix-kde-plasma/) | [GitHub](https://github.com/samwhelp/anduinos-iso-builder-remix-kde-plasma) |
+| [anduinos-iso-builder-respin-kde-plasma](https://samwhelp.github.io/anduinos-iso-builder-respin-kde-plasma/) | [GitHub](https://github.com/samwhelp/anduinos-iso-builder-respin-kde-plasma) |
+
+
 
 
 ## Samwhelp
