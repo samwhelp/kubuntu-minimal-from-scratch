@@ -14,6 +14,8 @@
 * [Link](#link)
 * [Upstream](#upstream)
 * [Branch](#branch)
+* [Discussions](#discussions)
+* [Link](#link)
 
 
 
@@ -32,6 +34,13 @@
 | ------ | ------------ |
 | [demo-base](https://github.com/samwhelp/kubuntu-minimal-from-scratch/tree/demo-base) | Generates a basic system that allows login via a text-based interface. |
 | [demo-full](https://github.com/samwhelp/kubuntu-minimal-from-scratch/tree/demo-full) | The resulting system includes the KDE Plasma desktop. |
+
+
+
+
+## Discussions
+
+* [#1 - About /etc/casper.conf](https://github.com/badwahaha/kubuntu_minimal_from_scratch/issues/1#issue-5035387052)
 
 
 
