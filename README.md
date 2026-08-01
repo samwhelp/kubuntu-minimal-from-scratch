@@ -60,9 +60,12 @@ casper: /etc/casper.conf
 ```
 
 
-| Link |
-| ---- |
+| Config File |
+| ----------- |
 | [/etc/casper.conf](https://git.launchpad.net/ubuntu/+source/casper/tree/casper.conf) |
+
+
+* [man 7 casper](https://manpages.ubuntu.com/manpages/resolute/man7/casper.7.html)
 
 
 
