@@ -45,6 +45,28 @@
 
 
 
+## Casper
+
+run
+
+``` sh
+apt-file search /etc/casper.conf
+```
+
+show
+
+```
+casper: /etc/casper.conf
+```
+
+
+| Link |
+| ---- |
+| [/etc/casper.conf](https://git.launchpad.net/ubuntu/+source/casper/tree/casper.conf) |
+
+
+
+
 ## Link
 
 | Link |
@@ -52,7 +74,7 @@
 | [live-custom-ubuntu-from-scratch](https://github.com/mvallim/live-custom-ubuntu-from-scratch) |
 | [AnduinOS](https://github.com/Anduin2017/AnduinOS) |
 | [AnduinOS-2](https://github.com/AiursoftWeb/AnduinOS-2) |
-| [/etc/casper.conf](https://git.launchpad.net/ubuntu/+source/casper/tree/casper.conf) |
+
 
 
 
