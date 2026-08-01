@@ -11,7 +11,6 @@
 
 ## Subject
 
-* [Link](#link)
 * [Upstream](#upstream)
 * [Branch](#branch)
 * [Discussions](#discussions)
