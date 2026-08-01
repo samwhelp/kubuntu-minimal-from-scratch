@@ -40,6 +40,7 @@
 ## Discussions
 
 * [#1 - About /etc/casper.conf](https://github.com/badwahaha/kubuntu_minimal_from_scratch/issues/1#issue-5035387052)
+* [#1 - Where can I download the ISO?](https://github.com/samwhelp/anduinos-iso-builder-remix-kde-plasma/issues/1)
 
 
 
