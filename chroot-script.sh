@@ -87,7 +87,7 @@ apt-get dist-upgrade -y
 ## ## Systemd
 ##
 
-apt install -y 	systemd-sysv --install-recommends
+apt-get install -y 	systemd-sysv --install-recommends
 
 
 ##
