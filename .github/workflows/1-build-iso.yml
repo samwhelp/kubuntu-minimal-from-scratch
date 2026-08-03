@@ -1,0 +1,50 @@
+name: A - Build Kubuntu 26.04 ISO
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code Repository
+      uses: actions/checkout@v4
+
+    - name: Free Disk Space on Cloud Runner
+      run: |
+        sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc "/usr/local/share/boost"
+        df -h
+
+    - name: Install System Compilation Dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y debootstrap squashfs-tools xorriso grub-pc-bin grub-efi-amd64-bin binutils gdisk rsync zstd
+
+    - name: Set Script Permissions
+      run: chmod +x do-build.sh
+
+    - name: Run Build Script with Root Privileges
+      run: |
+        export GITHUB_WORKSPACE="${{ github.workspace }}"
+        sudo -E ./do-build.sh
+
+    - name: Generate Dynamic Version Tag
+      id: tag
+      run: echo "release_tag=v$(date +'%Y.%m.%d-%H%M')" >> $GITHUB_OUTPUT
+
+    - name: Publish Finished ISO to GitHub Release Page
+      uses: softprops/action-gh-release@v2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ steps.tag.outputs.release_tag }}
+        name: "Kubuntu 26.04 Minimal Custom Build (${{ steps.tag.outputs.release_tag }})"
+        body: "Automated compilation of Kubuntu 26.04 Minimal (`resolute`). Verification testing will kick off next."
+        draft: false
+        prerelease: false
+        files: ${{ github.workspace }}/kubuntu-26.04-minimal-hardened.iso

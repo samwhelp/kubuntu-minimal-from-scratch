@@ -1,0 +1,5 @@
+breeze-gtk-theme
+breeze-icon-theme
+breeze-cursor-theme
+orchis-gtk-theme
+papirus-icon-theme

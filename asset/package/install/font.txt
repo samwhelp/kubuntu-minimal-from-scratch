@@ -1,0 +1,8 @@
+fonts-dejavu
+fonts-liberation2
+fonts-ubuntu
+fonts-ubuntu-console
+fonts-noto-cjk
+fonts-noto-core
+fonts-noto-mono
+fonts-noto-color-emoji

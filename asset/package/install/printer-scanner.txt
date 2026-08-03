@@ -1,0 +1,14 @@
+system-config-printer
+printer-driver-all
+printer-driver-gutenprint
+cups
+cups-client
+cups-daemon
+cups-filters
+
+
+sane-utils
+hplip
+hplip-gui
+
+simple-scan
