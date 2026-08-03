@@ -192,7 +192,11 @@ apt-get install -y 	calamares calamares-settings-kubuntu kubuntu-settings-deskto
 
 
 ##
-## ## Resolved some issues where errors occurred when installing the system using the calamares installer.
+## ## Resolved some issues where errors occurred when installing the system using the calamares installer (calamares-settings-kubuntu).
+##
+
+##
+## ## Calamares Log File Path: ~/.cache/calamares/session.log
 ##
 
 
@@ -206,7 +210,7 @@ fi
 
 
 ##
-## ## keep /etc/apt/sources.list exist for calamares installer
+## ## keep /etc/apt/sources.list exist for calamares installer (calamares-settings-kubuntu)
 ##
 
 touch /etc/apt/sources.list
@@ -221,7 +225,7 @@ touch /etc/apt/sources.list
 ##
 
 ##
-## ## keep /etc/apt/sources.list.d/cdrom.sources exist for calamares installer
+## ## keep /etc/apt/sources.list.d/cdrom.sources exist for calamares installer (calamares-settings-kubuntu)
 ##
 
 mkdir -p /etc/apt/sources.list.d
@@ -247,6 +251,11 @@ touch /etc/apt/sources.list.d/cdrom.sources
 ##
 
 
+##
+## ## clear file contents: /usr/bin/calamares-logs-helper for calamares installer (calamares-settings-kubuntu)
+##
+
+echo > /usr/bin/calamares-logs-helper
 
 
 ##
