@@ -402,17 +402,6 @@ __EOF__
 
 
 ##
-## ## Sound
-##
-
-apt-get install -y \
-	alsa-utils \
-	pulseaudio pamixer \
-	pipewire \
---install-recommends
-
-
-##
 ## ## Shell
 ##
 
