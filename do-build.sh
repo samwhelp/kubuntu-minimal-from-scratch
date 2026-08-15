@@ -609,7 +609,7 @@ echo "## [Install Packages]"
 echo "################################################################################"
 
 package_install_list=\$(cat "/opt/build/asset/package/install"/*.txt)
-apt-get install -y --install-recommends \${package_install_list}
+apt-get install -y --no-install-recommends \${package_install_list}
 
 
 ##
